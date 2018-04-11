@@ -36,12 +36,12 @@ public class level2 {
 			
 			
 			
-			if(rueckgabe % euro[7] >0 ) {
+			if(rueckgabe % euro[7] >=0 ) {
 
 				ausgabemuenzen[7] = rueckgabe/ euro[7];
 				rueckgabe = rueckgabe%euro[7];
 			}
-			if(rueckgabe % euro[6] >0 ) {
+			if(rueckgabe % euro[6] >=0 ) {
 
 				ausgabemuenzen[6] = rueckgabe / euro[6];
 				rueckgabe = rueckgabe%euro[6];
@@ -51,36 +51,36 @@ public class level2 {
 				ausgabemuenzen[5] = rueckgabe / euro[5];
 				rueckgabe = rueckgabe%euro[5];
 			}
-			if(rueckgabe % euro[4] >0 ) {
+			if(rueckgabe % euro[4] >=0 ) {
 
 				ausgabemuenzen[4] =rueckgabe / euro[4];
 				rueckgabe = rueckgabe%euro[4];
 			}
-			if(rueckgabe % euro[3] >0 ) {
+			if(rueckgabe % euro[3] >=0 ) {
 
 				ausgabemuenzen[3] =rueckgabe / euro[3];
 				rueckgabe = rueckgabe%euro[3];
 			}
-			if(rueckgabe % euro[2] >0 ) {
+			if(rueckgabe % euro[2] >=0 ) {
 
 				ausgabemuenzen[2] =rueckgabe/ euro[2];
 				rueckgabe = rueckgabe%euro[2];
 			}
-			if(rueckgabe % euro[1] >0 ) {
+			if(rueckgabe % euro[1] >=0 ) {
 
 				ausgabemuenzen[1] = rueckgabe / euro[1];
 				rueckgabe = rueckgabe%euro[1];
 			}
-			if(rueckgabe % euro[0] ==0 ) {
+			if(rueckgabe % euro[0] >=0 ) {
 
 				ausgabemuenzen[0] =rueckgabe / euro[0];
 				rueckgabe = rueckgabe%euro[0];
 			}
 
 			
-			System.out.print("CHANGE:");
+			System.out.println("CHANGE:" +(betrag-eingeworfen)*-1);
 			for(int z = 0; z<8;z++) {
-				System.out.print(ausgabemuenzen[z]);
+				System.out.print(ausgabemuenzen[z]+" ");
 			}
 			
 		}

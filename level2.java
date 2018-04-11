@@ -33,9 +33,9 @@ public class level2 {
 			euro[6] = 100;
 			euro[7] = 200;
 			rueckgabe = (betrag-eingeworfen)*-1;
-
-
-
+			
+			
+			
 			if(rueckgabe % euro[7] >0 ) {
 
 				ausgabemuenzen[7] = rueckgabe/ euro[7];
@@ -77,13 +77,12 @@ public class level2 {
 				rueckgabe = rueckgabe%euro[0];
 			}
 
-
-
+			
 			System.out.print("CHANGE:");
 			for(int z = 0; z<8;z++) {
 				System.out.print(ausgabemuenzen[z]);
 			}
-
+			
 		}
 		else if (betrag -eingeworfen == 0) {
 
@@ -93,8 +92,8 @@ public class level2 {
 			System.out.println("MISSING:" + (betrag -eingeworfen));
 		}
 
-
-
+		
+		
 
 
 	}
